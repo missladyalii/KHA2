@@ -15,7 +15,7 @@ define f = Character ('Charlotte', color= "#7E23CA")
 
 label start:
     # first day of class
-    scene bg main_hall at truecenter
+    scene bg main_hall at renpy.get_image_bounds(0,0, 1000,600)
     show secretary greet main hall
     with fade
     play music "bensound-sweet.mp3"

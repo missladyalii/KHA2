@@ -1,40 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 20, in script
-    play music audio/bensound-sweet.mp3
-  File "renpy/common/000statements.rpy", line 120, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 32, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "game/script.rpy", line 20, in <module>
-    play music audio/bensound-sweet.mp3
-NameError: name 'bensound' is not defined
+  File "game/script.rpy", line 18, in script
+    scene bg main_hall at truecenter with renpy.get_image_bounds(0,0, 1000,600)
+  File "game/script.rpy", line 18, in <module>
+    scene bg main_hall at truecenter with renpy.get_image_bounds(0,0, 1000,600)
+AttributeError: 'int' object has no attribute 'split'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 20, in script
-    play music audio/bensound-sweet.mp3
-  File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 1949, in execute
-    self.call("execute")
-  File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 1937, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\statements.py", line 277, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 120, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 32, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
+  File "game/script.rpy", line 18, in script
+    scene bg main_hall at truecenter with renpy.get_image_bounds(0,0, 1000,600)
+  File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 1385, in execute
+    paired = renpy.python.py_eval(self.paired)
   File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
     return py_eval_bytecode(code, globals, locals)
   File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 20, in <module>
-    play music audio/bensound-sweet.mp3
-NameError: name 'bensound' is not defined
+  File "game/script.rpy", line 18, in <module>
+    scene bg main_hall at truecenter with renpy.get_image_bounds(0,0, 1000,600)
+  File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\exports.py", line 2700, in get_image_bounds
+    tag = tag.split()[0]
+AttributeError: 'int' object has no attribute 'split'
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 KinderHelper Academy 1.0
-Mon Nov 02 13:22:19 2020
+Mon Nov 02 15:13:48 2020

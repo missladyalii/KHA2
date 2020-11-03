@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 18: multiple at clauses are prohibited.
+    scene bg main_hall at truecenter at renpy.get_image_bounds(0,0, 1000,600)
+                                       ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Mon Nov 02 15:13:19 2020
