@@ -15,9 +15,13 @@ define f = Character ('Charlotte', color= "#7E23CA")
 
 label start:
     # first day of class
-    scene bg main_hall at renpy.get_image_bounds(0,0, 1000,600)
+    #scene bg main_hall at renpy.get_image_bounds(0,0, 1000,600)
+    call screen myFirstScreen
+
+label first_day:
     show secretary greet main hall
     with fade
+
     play music "bensound-sweet.mp3"
     $save_name = "Introduction to KHA"
 

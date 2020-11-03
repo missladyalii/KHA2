@@ -1,39 +1,21 @@
-Mon Nov 02 15:13:44 2020
+Mon Nov 02 21:30:58 2020
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
  
 
-Bootstrap to the start of init.init took 0.06s
-Early init took 0.00s
-Loader init took 0.02s
+Bootstrap to the start of init.init took 0.08s
+Early init took 0.01s
+Loader init took 0.04s
 Loading error handling took 0.02s
-Loading script took 0.14s
+Loading script took 0.15s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\KHA':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.01s
+
+File "game/myscreens.rpy", line 4: u'jump' is not a keyword argument or valid child for the hotspot statement.
+    hotspot (559, 259, 398, 207) action jump first_day
+                                            ^
 DPI scale factor: 2.000000
-Creating interface object took 0.06s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.06s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.02s
+Interface start took 0.19s
 Couldn't import angle renderer:
 Traceback (most recent call last):
   File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\display\core.py", line 1939, in make_draw
@@ -297,33 +279,4 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1.37700009346s
-- Target is 5 frames in 0.333333333333 seconds.
-- Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.017949 seconds.
-- Frame drawn at 0.046949 seconds.
-- Frame drawn at 0.065949 seconds.
-- Frame drawn at 0.078949 seconds.
-- 0.078949 seconds to render 5 frames.
-
-Full traceback:
-  File "game/script.rpy", line 18, in script
-    scene bg main_hall at truecenter with renpy.get_image_bounds(0,0, 1000,600)
-  File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\ast.py", line 1385, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 18, in <module>
-    scene bg main_hall at truecenter with renpy.get_image_bounds(0,0, 1000,600)
-  File "C:\Users\User\Downloads\renpy-7.3.5-sdk\renpy\exports.py", line 2700, in get_image_bounds
-    tag = tag.split()[0]
-AttributeError: 'int' object has no attribute 'split'
-
-While running game code:
-  File "game/script.rpy", line 18, in script
-    scene bg main_hall at truecenter with renpy.get_image_bounds(0,0, 1000,600)
-  File "game/script.rpy", line 18, in <module>
-    scene bg main_hall at truecenter with renpy.get_image_bounds(0,0, 1000,600)
-AttributeError: 'int' object has no attribute 'split'
+Total time until interface ready: 1.76300001144s
